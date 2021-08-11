@@ -15,7 +15,7 @@ puts 'Creating Flats'
   Flat.create!(
     name: Faker::Company.name,
     address: Faker::Address.street_address,
-    description: Faker::Quotes::Shakespeare,
+    description: Faker::Quote.famous_last_words,
     price_per_night: rand(100..500),
     number_of_guests: rand(1..5)
   )
